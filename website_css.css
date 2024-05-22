@@ -1,0 +1,18 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.hvhs-aqua {
+  background-color: #5BD0D6;
+}
+
+.hvhs-grey {
+  background-color: #F2F2F2;
+}
+
+.hvhs-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
