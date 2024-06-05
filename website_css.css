@@ -10,27 +10,6 @@ header {
   height: 18%;
 }
 
-.link-text {
-  font-size: calc(1.5vw + 1vh);
-  max-height: 100%;
-  width: 55%;
-  padding: 0;
-}
-
-.link-image {
-  max-width: 126px;
-  width: 45%;
-  padding: 11px 10px;
-}
-
-.adalta-image {
-  max-width: 636px;
-  width: 100%;
-  min-height: 100%;
-  padding: 11px 10px;
-  top: 50%;
-}
-
 .hvhs-aqua {
   background-color: #5BD0D6;
 }
@@ -46,8 +25,48 @@ header {
   height: 100%
 }
 
-.hvhs-footer {
+#adalta-image {
+  max-width: 636px;
+  width: 100%;
+  min-height: 100%;
+  padding: 11px 10px;
+  top: 50%;
+}
+
+#link-button {
+  right: 0;
+}
+
+.link-text {
+  font-size: calc(1.5vw + 1vh);
+  width: 55%;
+  padding: 0;
+}
+
+#link-image {
+  display: inline-block;
+  max-width: 126px;
+  width: 45%;
+  padding: 11px 10px;
+}
+
+.hvhs-landingpage-body {
+  height: 70vh;
+}
+
+#landing-overlay-image {
+  height: calc(69vh + 2px);
+  min-height: 224px;
+  float: right;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  right: 0;
+}
+
+footer {
   width: 100%;
   position: absolute;
   bottom: 0;
+  height: 12%;
 }
