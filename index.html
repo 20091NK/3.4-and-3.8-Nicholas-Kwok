@@ -20,29 +20,50 @@
     <div class=" w3-container w3-display-container w3-half hvhs-aqua hvhs-headeritem">
       <img src="images/HVHS-Ad-Alta.png" class="w3-image w3-container w3-center" id="adalta-image">
     </div>
-    <div class="w3-container hvhs-aqua w3-quarter hvhs-headeritem">
+    <div id="landingpage-filler" class="w3-container hvhs-aqua w3-quarter hvhs-headeritem">
     </div>
 
     <!--Button-->
-    <a href="https://hvhs.school.nz/" id="link-button" class="w3-container w3-hover-grey hvhs-grey w3-quarter hvhs-headeritem">
-      <img src="images/link.png" id="link-image" class="w3-half w3-image w3-container">
-      <h2 class="w3-half w3-container w3-center" id="link-text"><b>Official Website</b></h2>
+    <a href="https://hvhs.school.nz/" id="link-button" class="w3-hover-grey hvhs-grey w3-quarter hvhs-headeritem">
+      <div class="w3-container w3-cell" id="link-image-div">
+        <img src="images/link.png" id="link-image" class="w3-center">
+      </div>
+
+      <div class="w3-container w3-cell" id="link-text-div">
+        <h2 id="link-text"><b>Official Website</b></h2>
+      </div>
     </a>
   </header>
 
   <!--Body-->
   <div class="w3-container">
-    <img src="images/landing-page-overlayV2.png" id="landing-overlay-image" class="w3-image">
+    <img src="images/landing-page-overlayV2.png" id="landing-overlay-image" class="w3-image w3-display-right">
+    <div class="w3-container hvhs-grey w3-hover-grey w3-button" id="main-button">
+      <h1><b>Go! ▶</b></h1>
+    </div>
+
   </div>
 
+  <!--Footer-->
   <footer class="w3-container w3-bar w3-black">
-    <div class="w3-container w3-bar-item w3-btn w3-hover-white">
+    <button class="w3-container w3-bar-item w3-btn w3-hover-white"
+      onclick="document.getElementById('disclaimer_modal').style.display='block'">
       <h3 class="w3-center"><u>Disclaimers</u></h3>
-    </div>
-    <div class="w3-container w3-bar-item w3-btn w3-hover-white">
+    </button>
+    <button class="w3-container w3-bar-item w3-btn w3-hover-white"
+      onclick="document.getElementById('credits_modal').style.display='block'">
       <h3 class="w3-center"><u>Credits</u></h3>
-    </div>
+    </button>
   </footer>
+
+  <div id="disclaimer_modal" class="w3-modal"
+    onclick="document.getElementById('disclaimer_modal').style.display='none'">
+    <div class="w3-container w3-display-middle w3-black w3-center w3-round-large">
+      <img src="images/cropped-favicon.jpg" class="w3-image w3-display-container hvhs-modal-overlay">
+    <h1 class="w3-display-middle"><b>PLACEHOLDER</b></h1>
+    </div>
+  </div>
+
 </body>
 
 </html>
