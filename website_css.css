@@ -10,6 +10,19 @@ header {
   height: 18%;
 }
 
+img.BG-center {
+  position: fixed;
+  width:100vw;
+  min-height: 750px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: -100000;
+}
+
+img.BG-hide{
+  display:none
+}
 
 .hvhs-aqua {
   background-color: #5BD0D6;
