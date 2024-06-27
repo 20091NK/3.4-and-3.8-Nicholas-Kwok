@@ -20,10 +20,12 @@ header {
 
 /*--Landing Page--*/
 
+/*----BG Image----*/
+
 img.BG-center {
   position: fixed;
-  width: 100vw;
-  min-height: 750px;
+  width: 125%;
+  min-width: 1280px;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
@@ -33,6 +35,8 @@ img.BG-center {
 img.BG-hide {
   display: none
 }
+
+/*----Header----*/
 
 .hvhs-headeritem {
   display: inline-block;
@@ -55,7 +59,8 @@ img.BG-hide {
 
 #link-image {
   object-fit: contain;
-  max-width: 126px;
+  max-width: 125px;
+  min-width: 75px;
   width: 100%;
   padding: 11px 10px;
 }
@@ -66,6 +71,8 @@ img.BG-hide {
   float: right;
   font-size: calc(1vw + 1.5vh);
 }
+
+/*---Main Body---*/
 
 .hvhs-landingpage-body {
   height: 70vh;
@@ -88,12 +95,12 @@ img.BG-hide {
 
 #title-main {
   font-size: 150px;
-  padding: 0
+  padding: 0px
 }
 
 #title-sub {
   font-size: 38px;
-  padding: 0
+  padding: 0px
   top: 0%
 }
 #main-button {
@@ -110,6 +117,8 @@ img.BG-hide {
   width: 75%;
   opacity: 0.25
 }
+
+/*----Footer----*/
 
 footer {
   width: 100%;
