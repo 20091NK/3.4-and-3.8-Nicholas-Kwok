@@ -100,9 +100,9 @@ img.BG-hide {
 
 #title-sub {
   font-size: 38px;
-  padding: 0px
-  top: 0%
+  padding: 0px top: 0%
 }
+
 #main-button {
   border: 2px solid black;
   float: right;
@@ -124,5 +124,4 @@ footer {
   width: 100%;
   position: absolute;
   bottom: 0;
-  height: 12%;
 }
