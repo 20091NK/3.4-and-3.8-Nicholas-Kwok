@@ -1,6 +1,8 @@
 html {
   height: 100%;
   width: 100%;
+  margin: 0;
+  overflow: hidden
 }
 
 header {
@@ -74,6 +76,10 @@ img.BG-hide {
 
 /*---Main Body---*/
 
+body {
+  overflow: hidden
+}
+
 .hvhs-landingpage-body {
   height: 70vh;
 }
@@ -85,7 +91,8 @@ img.BG-hide {
   float: right;
   padding: 0px;
   margin: 0px;
-  position: absolute;
+  position: fixed;
+  transform: translate(0%, 0%);
   right: 0;
 }
 
@@ -93,14 +100,16 @@ img.BG-hide {
   padding: 0;
 }
 
-#title-main {
-  font-size: 150px;
-  padding: 0px
-}
-
-#title-sub {
-  font-size: 38px;
-  padding: 0px top: 0%
+.webTitle {
+  z-index: -99999;
+  width: 150%;
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-32.5%, -25%);
 }
 
 #main-button {
