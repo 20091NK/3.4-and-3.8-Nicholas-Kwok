@@ -141,14 +141,25 @@ footer {
   padding: 0
 }
 
-.slideshow-container {
-  height: 100vh;
-}
-
 #ad-alta-mapicon {
   max-width: 256px;
 }
 
 #map {
   width: 70%;
+}
+
+.slideshow-container {
+  height: 100vh;
+}
+
+.grid-container{
+  display:grid;
+  grid-template-columns: auto auto;
+}
+
+.grid-item{
+  height: 50%;
+  width: 50%;
+  
 }
