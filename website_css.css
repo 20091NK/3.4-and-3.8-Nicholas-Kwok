@@ -134,3 +134,13 @@ footer {
   position: absolute;
   bottom: 0;
 }
+
+/*--Map Overlay--*/
+
+.overlay-topbar {
+  padding: 0
+}
+
+.slideshow-container{
+  height:100vh;
+}
