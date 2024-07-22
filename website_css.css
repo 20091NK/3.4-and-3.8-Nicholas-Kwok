@@ -153,13 +153,28 @@ footer {
   height: 100vh;
 }
 
-.grid-container{
-  display:grid;
+.grid-container {
+  display: grid;
   grid-template-columns: auto auto;
 }
 
-.grid-item{
+.grid-item {
   height: 50%;
   width: 50%;
-  
+
+}
+
+.slides-arrow {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.badge-padding {
+  padding: 14px 24px 14px 24px;
+}
+
+.w3-badge {
+  height: 18px;
+  width: 18px;
+  padding: 0;
 }
