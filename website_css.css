@@ -146,7 +146,7 @@ footer {
 }
 
 #map {
-  width: 70%;
+  height: 87.5vh;
 }
 
 .slideshow-container {
@@ -159,12 +159,15 @@ footer {
 }
 
 .grid-item {
-  height: 50%;
+  border: 2px solid black;
+  height: 100%;
   width: 50%;
-
+  padding: 15px 0px;
+  position: relative;
 }
 
-.slides-arrow {
+.slidesA-arrow {
+  border: 2px solid black;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -177,4 +180,64 @@ footer {
   height: 18px;
   width: 18px;
   padding: 0;
+}
+
+#hvhs-ablock {
+  background-color: #059257;
+}
+
+#hvhs-bblock {
+  background-color: #21ceae;
+}
+
+#hvhs-cblock {
+  background-color: #ffd006;
+}
+
+#hvhs-dblock {
+  background-color: #008a97;
+}
+
+#hvhs-eblock {
+  background-color: #ea839c;
+}
+
+#hvhs-fblock {
+  background-color: #bc5052;
+}
+
+#hvhs-gblock {
+  background-color: #84d3c4;
+}
+
+#hvhs-mblock {
+  background-color: #fa896a;
+}
+
+#hvhs-pblock {
+  background-color: #c1528a;
+}
+
+#hvhs-vblock {
+  background-color: #a87d52;
+}
+
+#hvhs-wblock {
+  background-color: #5bd0d5;
+}
+
+#hvhs-zblock {
+  background-color: #acc14f;
+}
+
+#hvhs-gym {
+  background-color: #71d563;
+}
+
+.hvhs-misc {
+  background-color: #414243;
+}
+
+.hvhs-misc2 {
+  background-color: #f79521;
 }
