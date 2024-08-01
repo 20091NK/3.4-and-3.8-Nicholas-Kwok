@@ -10,7 +10,8 @@
   <!--CSS-->
   <link rel="stylesheet" href="https://w3schools.com/w3css/4/w3.css" />
   <link href="website_css.css" rel="stylesheet" type="text/css" />
-
+  <!--Installing A-Frame-->
+  <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
 </head>
 
 <body>
@@ -29,11 +30,11 @@
           <h2 class="w3-center"><strong>Select a block to view it!</strong></h2>
         </div>
       </header>
-      
+
       <!---Map Overlay Map--->
       <div class="w3-container" id="mapoverlay-map">
         <p>PLACEHOLDER</p>
-      </div>      
+      </div>
     </div>
 
     <!---Slideshow Map Overview--->
@@ -45,11 +46,25 @@
       <div class="w3-contentw3-container w3-center">
         <p>TESTING</p>
       </div>
+      <div class="w3-container w3-button" onclick="hideOverlay()">Hide Overlay</div>
     </div>
   </div>
-  
 
-  
+  <div class="w3-container" id="scene-overlay" onclick="showOverlay()">
+    <div class="hvhs-grey w3-button w3-quarter">Show Overlay</div>
+  </div>
+
+  <a-scene cursor="rayOrigin: mouse">
+    <!--Sky-->
+    <a-sky id="sky1" opacity="1" src="images/nebula.png"></a-sky>
+    <!--Camera-->
+    <a-entity id="camera" camera look-controls wasd-controls position="0 1.6 0"></a-entity>
+
+    <a-box id="testBox" color="orange" position="0 1 -8">
+
+  </a-scene>
+
+  <script src="scripts/map_overlay.js"></script>
 </body>
 
 </html>

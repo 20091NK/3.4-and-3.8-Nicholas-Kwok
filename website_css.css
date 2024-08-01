@@ -137,10 +137,22 @@ footer {
 
 /*--Map Overlay--*/
 
+#map-overlay {
+  position: absolute;
+  width: 100%;
+  z-index: 10000;
+}
+
+#scene-overlay {
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+}
+
 .overlay-topbar {
   padding: 0
 }
 
-.slideshow-container{
-  height:100vh;
+.slideshow-container {
+  height: 100vh;
 }
