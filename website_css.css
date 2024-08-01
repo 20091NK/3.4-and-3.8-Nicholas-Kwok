@@ -161,7 +161,6 @@ footer {
 .grid-item {
   border: 2px solid black;
   height: 100%;
-  width: 50%;
   padding: 15px 0px;
   position: relative;
 }
