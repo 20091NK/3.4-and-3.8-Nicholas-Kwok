@@ -145,8 +145,18 @@ footer {
   max-width: 256px;
 }
 
+#mapoverlay-map {
+  height: 87.5vh;
+}
+
 #map {
   height: 87.5vh;
+}
+
+.map-highlight {
+  height: 87.5vh;
+  opacity: 0.0;
+  z-index: 30;
 }
 
 .slideshow-container {
@@ -239,4 +249,94 @@ footer {
 
 .hvhs-misc2 {
   background-color: #f79521;
+}
+
+/*---Highlight Functions---*/
+
+body:has(#hvhs-ablock:hover) #highlight-a {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-admin:hover) #highlight-admin {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-bblock:hover) #highlight-b {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-cblock:hover) #highlight-c {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-canteen:hover) #highlight-canteen {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-dblock:hover) #highlight-d {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-eblock:hover) #highlight-e {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-fblock:hover) #highlight-f {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-gblock:hover) #highlight-g {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-gym:hover) #highlight-gym {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-hall:hover) #highlight-hall {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-lblock:hover) #highlight-l {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-library:hover) #highlight-library {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-mblock:hover) #highlight-m {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-soffice:hover) #highlight-office {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-pblock:hover) #highlight-p {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-pavilion:hover) #highlight-pavilion {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-rescen:hover) #highlight-rescen {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-sblock:hover) #highlight-s {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-vblock:hover) #highlight-v {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-wblock:hover) #highlight-w {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-zblock:hover) #highlight-z {
+  opacity: 0.5;
 }
