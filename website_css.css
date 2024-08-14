@@ -145,6 +145,12 @@ footer {
   max-width: 256px;
 }
 
+#mapoverlay-modal-content {
+  z-index: 20;
+  border: 2px solid black;
+  width: 80%;
+}
+
 #mapoverlay-map {
   height: 87.5vh;
 }
