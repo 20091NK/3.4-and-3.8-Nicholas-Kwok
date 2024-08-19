@@ -155,11 +155,44 @@ footer {
   max-width: 256px;
 }
 
-#mapoverlay-modal-content {
-  z-index: 20;
-  border: 2px solid black;
-  width: 80%;
+#mapoverlay-modal {
+  z-index: 50;
+  width: 33.333333%;
 }
+
+#mapoverlay-modal-content {
+  border: 2px solid black;
+  width: 33.333333%;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+}
+
+#mapoverlay-modal-top {
+  height: 15%
+}
+
+#mapoverlay-modal-text {
+  width: 100%
+}
+
+#mapoverlay-slideshow-mid1 {
+  height: 30%
+}
+
+#mapoverlay-slideshow-mid2 {
+  height: 25%
+}
+
+#mapoverlay-modal-bot {
+  height: 30%
+}
+
+.mapoverlay-modal-btn {
+  border: 2px solid black;
+  width: 80%
+}
+
 
 #mapoverlay-map {
   height: 87.5vh;
