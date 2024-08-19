@@ -153,6 +153,211 @@ footer {
   padding: 0
 }
 
+#ad-alta-mapicon {
+  max-width: 256px;
+}
+
+#mapoverlay-modal-content {
+  z-index: 20;
+  border: 2px solid black;
+  width: 80%;
+}
+
+#mapoverlay-map {
+  height: 87.5vh;
+}
+
+#map {
+  height: 87.5vh;
+}
+
+.map-highlight {
+  height: 87.5vh;
+  opacity: 0.0;
+  z-index: 30;
+}
+
+.slideshow-container {
+  height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.grid-item {
+  border: 2px solid black;
+  height: 100%;
+  padding: 15px 0px;
+  position: relative;
+}
+
+.slidesA-arrow {
+  border: 2px solid black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.badge-padding {
+  padding: 14px 24px 14px 24px;
+}
+
+.w3-badge {
+  height: 18px;
+  width: 18px;
+  padding: 0;
+}
+
+#hvhs-ablock {
+  background-color: #059257;
+}
+
+#hvhs-bblock {
+  background-color: #21ceae;
+}
+
+#hvhs-cblock {
+  background-color: #ffd006;
+}
+
+#hvhs-dblock {
+  background-color: #008a97;
+}
+
+#hvhs-eblock {
+  background-color: #ea839c;
+}
+
+#hvhs-fblock {
+  background-color: #bc5052;
+}
+
+#hvhs-gblock {
+  background-color: #84d3c4;
+}
+
+#hvhs-mblock {
+  background-color: #fa896a;
+}
+
+#hvhs-pblock {
+  background-color: #c1528a;
+}
+
+#hvhs-vblock {
+  background-color: #a87d52;
+}
+
+#hvhs-wblock {
+  background-color: #5bd0d5;
+}
+
+#hvhs-zblock {
+  background-color: #acc14f;
+}
+
+#hvhs-gym {
+  background-color: #71d563;
+}
+
+.hvhs-misc {
+  background-color: #414243;
+}
+
+.hvhs-misc2 {
+  background-color: #f79521;
+}
+
+/*---Highlight Functions---*/
+
+body:has(#hvhs-ablock:hover) #highlight-a {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-admin:hover) #highlight-admin {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-bblock:hover) #highlight-b {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-cblock:hover) #highlight-c {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-canteen:hover) #highlight-canteen {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-dblock:hover) #highlight-d {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-eblock:hover) #highlight-e {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-fblock:hover) #highlight-f {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-gblock:hover) #highlight-g {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-gym:hover) #highlight-gym {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-hall:hover) #highlight-hall {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-lblock:hover) #highlight-l {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-library:hover) #highlight-library {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-mblock:hover) #highlight-m {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-soffice:hover) #highlight-office {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-pblock:hover) #highlight-p {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-pavilion:hover) #highlight-pavilion {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-rescen:hover) #highlight-rescen {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-sblock:hover) #highlight-s {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-vblock:hover) #highlight-v {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-wblock:hover) #highlight-w {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-zblock:hover) #highlight-z {
+  opacity: 0.5;
+
 .slideshow-container {
   height: 100vh;
 }

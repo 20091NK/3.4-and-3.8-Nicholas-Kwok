@@ -17,6 +17,16 @@
 <body>
   <!--Map Overlay-->
 
+  <!--Map Overlay Modal-->
+  <div id="mapoverlay-modal" class="w3-modal w3-twothird"
+    onclick="document.getElementById('mapoverlay-modal').style.display='none'">
+    <div class="w3-left" id="mapoverlay-modal-content">
+      <div class="w3-container hvhs-aqua">
+        <h1><strong>TEST MODAL</strong></h1>
+      </div>
+    </div>
+  </div>
+
   <!---Top Bar--->
   <div class="w3-row" id="map-overlay">
     <div class="w3-container w3-col l8 m12 overlay-topbar">
@@ -32,19 +42,158 @@
       </header>
 
       <!---Map Overlay Map--->
-      <div class="w3-container" id="mapoverlay-map">
-        <p>PLACEHOLDER</p>
+      <div class="w3-container w3-white w3-display-container w3-center" id="mapoverlay-map">
+        <img src="images/mapV2.png" class="w3-image w3-display-middle" id="map">
+        <!----Map Highlights---->
+        <img src="images/MapHighlights/HighlightA.png" class="w3-image w3-display-middle map-highlight"
+          id="highlight-a">
+        <img src="images/MapHighlights/HighlightAdmin.png" class="w3-image w3-display-middle map-highlight"
+          id="highlight-admin">
+        <img src="images/MapHighlights/HighlightB.png" class="w3-image w3-display-middle map-highlight"
+          id="highlight-b">
+        <img src="images/MapHighlights/HighlightCanteen.png" class="w3-image w3-display-middle map-highlight"
+          id="highlight-canteen">
+        <img src="images/MapHighlights/HighlightD.png" class="w3-image w3-display-middle map-highlight"
+          id="highlight-d">
+        <img src="images/MapHighlights/HighlightE.png" class="w3-image w3-display-middle map-highlight"
+          id="highlight-e">
+        <img src="images/MapHighlights/HighlightF.png" class="w3-image w3-display-middle map-highlight"
+          id="highlight-f">
+        <img src="images/MapHighlights/HighlightG.png" class="w3-image w3-display-middle map-highlight"
+          id="highlight-g">
+        <img src="images/MapHighlights/HighlightGym.png" class="w3-image w3-display-middle map-highlight"
+          id="highlight-gym">
+        <img src="images/MapHighlights/HighlightHall.png" class="w3-image w3-display-middle map-highlight"
+          id="highlight-hall">
+        <img src="images/MapHighlights/HighlightL.png" class="w3-image w3-display-middle map-highlight"
+          id="highlight-l">
+        <img src="images/MapHighlights/HighlightLibrary.png" class="w3-image w3-display-middle map-highlight"
+          id="highlight-library">
+        <img src="images/MapHighlights/HighlightM.png" class="w3-image w3-display-middle map-highlight"
+          id="highlight-m">
+        <img src="images/MapHighlights/HighlightOffice.png" class="w3-image w3-display-middle map-highlight"
+          id="highlight-office">
+        <img src="images/MapHighlights/HighlightP.png" class="w3-image w3-display-middle map-highlight"
+          id="highlight-p">
+        <img src="images/MapHighlights/HighlightPavilion.png" class="w3-image w3-display-middle map-highlight"
+          id="highlight-pavilion">
+        <img src="images/MapHighlights/HighlightResCenter.png" class="w3-image w3-display-middle map-highlight"
+          id="highlight-rescen">
+        <img src="images/MapHighlights/HighlightS.png" class="w3-image w3-display-middle map-highlight"
+          id="highlight-s">
+        <img src="images/MapHighlights/HighlightV.png" class="w3-image w3-display-middle map-highlight"
+          id="highlight-v">
+        <img src="images/MapHighlights/HighlightW.png" class="w3-image w3-display-middle map-highlight"
+          id="highlight-w">
+        <img src="images/MapHighlights/HighlightZ.png" class="w3-image w3-display-middle map-highlight"
+          id="highlight-z">
       </div>
     </div>
 
     <!---Slideshow Map Overview--->
     <div class="slideshow-container w3-container w3-col l4 m12 w3-black">
       <div class="w3-container w3-center">
-        <img src="images/Ad-Alta-Icon.jpg" style="max-width: 256px;">
+        <img src="images/Ad-Alta-Icon.jpg" id="ad-alta-mapicon">
       </div>
 
-      <div class="w3-contentw3-container w3-center">
-        <p>TESTING</p>
+      <!----Slideshow----->
+      <div class="w3-content w3-container w3-center">
+        <!-----Slide 01----->
+        <div class="SlidesA w3-container grid-container">
+          <div id="hvhs-ablock" class="w3-container grid-item w3-half w3-button" onclick="currentSlideB(1)">
+            <h1><strong>A</strong></h1>
+          </div>
+          <div id="hvhs-bblock" class="w3-container grid-item w3-half w3-button" onclick="currentSlideB(2)">
+            <h1><strong>B</strong></h1>
+          </div>
+          <div id="hvhs-cblock" class="w3-container grid-item w3-half w3-button w3-disabled" onclick="currentSlideB(3)">
+            <h1><strong>C</strong></h1>
+          </div>
+          <div id="hvhs-dblock" class="w3-container grid-item w3-half w3-button" onclick="currentSlideB(4)">
+            <h1><strong>D</strong></h1>
+          </div>
+          <div id="hvhs-eblock" class="w3-container grid-item w3-half w3-button" onclick="currentSlideB(5)">
+            <h1><strong>E</strong></h1>
+          </div>
+          <div id="hvhs-fblock" class="w3-container grid-item w3-half w3-button" onclick="currentSlideB(6)">
+            <h1><strong>F</strong></h1>
+          </div>
+        </div>
+        <!-----Slide 02----->
+        <div class="SlidesA w3-container grid-container">
+          <div id="hvhs-gblock" class="w3-container grid-item w3-half w3-button" onclick="currentSlideB(7)">
+            <h1><strong>G</strong></h1>
+          </div>
+          <div id="hvhs-lblock" class="hvhs-misc w3-container grid-item w3-half w3-button" onclick="currentSlideB(8)">
+            <h1><strong>L</strong></h1>
+          </div>
+          <div id="hvhs-mblock" class="w3-container grid-item w3-half w3-button" onclick="currentSlideB(9)">
+            <h1><strong>M</strong></h1>
+          </div>
+          <div id="hvhs-pblock" class="w3-container grid-item w3-half w3-button" onclick="currentSlideB(10)">
+            <h1><strong>P</strong></h1>
+          </div>
+          <div id="hvhs-sblock" class="hvhs-misc2 w3-container grid-item w3-half w3-button" onclick="currentSlideB(11)">
+            <h1><strong>S</strong></h1>
+          </div>
+          <div id="hvhs-vblock" class="w3-container grid-item w3-half w3-button" onclick="currentSlideB(12)">
+            <h1><strong>V</strong></h1>
+          </div>
+        </div>
+        <!-----Slide 03----->
+        <div class="SlidesA w3-container grid-container">
+          <div id="hvhs-wblock" class="w3-container grid-item w3-half w3-button" onclick="currentSlideB(13)">
+            <h1><strong>W</strong></h1>
+          </div>
+          <div id="hvhs-zblock" class="w3-container grid-item w3-half w3-button" onclick="currentSlideB(14)">
+            <h1><strong>SLC</strong></h1>
+          </div>
+          <div id="hvhs-gym" class="w3-container grid-item w3-half w3-button" onclick="currentSlideB(15)">
+            <h1><strong>Gym</strong></h1>
+          </div>
+          <div id="hvhs-soffice" class="hvhs-misc w3-container grid-item w3-half w3-button" onclick="currentSlideB(16)">
+            <h1><strong>S. Office</strong></h1>
+          </div>
+          <div id="hvhs-hall" class="hvhs-misc w3-container grid-item w3-half w3-button" onclick="currentSlideB(17)">
+            <h1><strong>Hall</strong></h1>
+          </div>
+          <div id="hvhs-library" class="hvhs-misc w3-container grid-item w3-half w3-button" onclick="currentSlideB(18)">
+            <h1><strong>Library</strong></h1>
+          </div>
+        </div>
+        <!-----Slide 04----->
+        <div class="SlidesA w3-container grid-container">
+          <div id="hvhs-canteen" class="hvhs-misc w3-container grid-item w3-half w3-button" onclick="currentSlideB(19)">
+            <h1><strong>Canteen</strong></h1>
+          </div>
+          <div id="hvhs-rescen" class="hvhs-misc w3-container grid-item w3-half w3-button" onclick="currentSlideB(20)">
+            <h1><strong>R. Center</strong></h1>
+          </div>
+          <div id="hvhs-pavilion" class="hvhs-misc w3-container grid-item w3-half w3-button"
+            onclick="currentSlideB(21)">
+            <h1><strong>Pavilion</strong></h1>
+          </div>
+          <div id="hvhs-admin" class="hvhs-misc w3-container grid-item w3-half w3-button" onclick="currentSlideB(22)">
+            <h1><strong>Admin</strong></h1>
+          </div>
+          <div class="hvhs-misc w3-container grid-item w3-half">
+            <h1><strong>HVHS</strong></h1>
+          </div>
+        </div>
+        <!-----Slideshow Nav Buttons----->
+        <div class="w3-container">
+          <div class="slidesA-arrow w3-container w3-half w3-button hvhs-grey w3-text-black" onclick="changeSlideA(-1)">
+            &#10094;</div>
+          <div class="slidesA-arrow w3-container w3-half w3-button hvhs-grey w3-text-black" onclick="changeSlideA(1)">
+            &#10095;</div>
+        </div>
+      </div>
+
+      <div class="w3-container w3-content w3-center badge-padding">
+        <span class="BadgeA w3-badge w3-border w3-hover-white" onclick="currentSlideA(1)"></span>
+        <span class="BadgeA w3-badge w3-border w3-hover-white" onclick="currentSlideA(2)"></span>
+        <span class="BadgeA w3-badge w3-border w3-hover-white" onclick="currentSlideA(3)"></span>
+        <span class="BadgeA w3-badge w3-border w3-hover-white" onclick="currentSlideA(4)"></span>
       </div>
       <div class="w3-container w3-button" onclick="hideOverlay()">Hide Overlay</div>
     </div>
@@ -63,7 +212,9 @@
     <a-box id="testBox" color="orange" position="0 1 -8">
 
   </a-scene>
-
+    
+  <!--Script Installation for MainPage SlideShows-->
+  <script src="scripts/slideshow_MainPage.js"></script>
   <script src="scripts/map_overlay.js"></script>
 </body>
 
