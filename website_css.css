@@ -139,13 +139,11 @@ footer {
 
 #map-overlay {
   position: absolute;
-  width: 100%;
   z-index: 10000;
 }
 
 #scene-overlay {
   position: absolute;
-  width: 100%;
   z-index: 9999;
 }
 
@@ -194,6 +192,28 @@ footer {
   border: 2px solid black;
   width: 80%
 }
+
+#mapoverlay-modal-text {
+  width: 100%
+}
+
+#mapoverlay-slideshow-mid1 {
+  height: 30%
+}
+
+#mapoverlay-slideshow-mid2 {
+  height: 25%
+}
+
+#mapoverlay-modal-bot {
+  height: 30%
+}
+
+.mapoverlay-modal-btn {
+  border: 2px solid black;
+  width: 80%
+}
+
 
 #mapoverlay-map {
   height: 87.5vh;
@@ -395,6 +415,6 @@ body:has(#hvhs-wblock:hover) #highlight-w {
 body:has(#hvhs-zblock:hover) #highlight-z {
   opacity: 0.5;
 
-.slideshow-container {
-  height: 100vh;
-}
+  .slideshow-container {
+    height: 100vh;
+  }
