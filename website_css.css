@@ -139,13 +139,11 @@ footer {
 
 #map-overlay {
   position: absolute;
-  width: 100%;
   z-index: 10000;
 }
 
 #scene-overlay {
   position: absolute;
-  width: 100%;
   z-index: 9999;
 }
 
@@ -358,6 +356,6 @@ body:has(#hvhs-wblock:hover) #highlight-w {
 body:has(#hvhs-zblock:hover) #highlight-z {
   opacity: 0.5;
 
-.slideshow-container {
-  height: 100vh;
-}
+  .slideshow-container {
+    height: 100vh;
+  }
