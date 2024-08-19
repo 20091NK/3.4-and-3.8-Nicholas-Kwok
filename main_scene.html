@@ -18,12 +18,28 @@
   <!--Map Overlay-->
 
   <!--Map Overlay Modal-->
-  <div id="mapoverlay-modal" class="w3-modal w3-twothird"
-    onclick="document.getElementById('mapoverlay-modal').style.display='none'">
-    <div class="w3-left" id="mapoverlay-modal-content">
-      <div class="w3-container hvhs-aqua">
-        <h1><strong>TEST MODAL</strong></h1>
+  <div id="mapoverlay-modal" class="w3-modal w3-display-container w3-animate-opacity">
+    <div class="w3-left w3-display-top" id="mapoverlay-modal-content">
+      <div id="mapoverlay-modal-top" class="w3-center w3-display-container w3-container hvhs-grey">
+        <div id="mapoverlay-modal-text" class="w3-container w3-display-middle">
+          <h1><strong>TEST MODAL</strong></h1>
+        </div>
       </div>
+      <div id="mapoverlay-slideshow-mid1" class="w3-container w3-orange">
+        <h1><strong>Placeholder</strong></h1>
+      </div>
+      <div id="mapoverlay-slideshow-mid2" class="w3-container hvhs-aqua w3-center">
+        <p><strong>Description Placeholder</strong></p>
+      </div>
+      <footer id="mapoverlay-modal-bot" class="w3-container hvhs-misc w3-center">
+        <div class="w3-container w3-button hvhs-grey w3-margin mapoverlay-modal-btn">
+          <h2><strong>Visit in VR!</strong></h2>
+        </div>
+        <div class="w3-container w3-button hvhs-grey mapoverlay-modal-btn w3-margin"
+          onclick="document.getElementById('mapoverlay-modal').style.display='none'">
+          <h2><strong>&times; Close</strong></h2>
+        </div>
+      </footer>
     </div>
   </div>
 
@@ -176,7 +192,7 @@
           <div id="hvhs-admin" class="hvhs-misc w3-container grid-item w3-half w3-button" onclick="currentSlideB(22)">
             <h1><strong>Admin</strong></h1>
           </div>
-          <div class="hvhs-misc w3-container grid-item w3-half">
+          <div id="slideshowA-placeholder" class="w3-container grid-item w3-half hvhs-grey w3-text-black">
             <h1><strong>HVHS</strong></h1>
           </div>
         </div>
