@@ -1,6 +1,9 @@
 var slideIndexA = 1;
 var slideIndexB = 1;
 
+const slideInfoB = ["A Block", "B Block", "C Block", "D Block", "E Block", "F Block", "G Block", "L Block", "M Block", "P Block", "S Block", "V Block", "W Block", "SLC", "Gym", "Student Office", "Assembly Hall", "Library", "Canteen", "Resource Center", "Pavilion", "Admin & Visitors"];
+const slideSkyB = ["sky1", "sky2", "sky3", "sky4", "sky5", "sky6", "sky7", "sky8", "sky9", "sky10", "sky11", "sky12", "sky13", "sky14", "sky15", "sky16", "sky17", "sky18", "sky19", "sky20", "sky21", "sky22"];
+
 showSlidesA(slideIndexA);
 showSlidesB(slideIndexB);
 
@@ -13,11 +16,12 @@ function currentSlideA(n) {
 }
 
 function changeSlideB(n) {
-  //showSlidesB(slideIndexB += n);
+  showSlidesB(slideIndexB += n);
+  document.getElementById("mapoverlay-modal").style.display = "block";
 }
 
 function currentSlideB(n) {
-  //showSlidesB(slideIndexB = n);
+  showSlidesB(slideIndexB = n);
   document.getElementById("mapoverlay-modal").style.display = "block";
 }
 
@@ -29,8 +33,6 @@ function showSlidesA(n) {
   if (n < 1) { slideIndexA = x.length }
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
-  }
-  for (i = 0; i < x.length; i++) {
     y[i].className = y[i].className.replace(" w3-white", "");
   }
 
@@ -40,12 +42,25 @@ function showSlidesA(n) {
 
 function showSlidesB(n) {
   let i;
-  let x = document.getElementsByClassName("SlidesB");
-  if (n > x.length) { slideIndexB = 1 }
-  if (n < 1) { slideIndexB = x.length }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+  let a = document.getElementsByClassName("SlidesB");
+  let b = document.getElementsByClassName("scene-sky");
+  let c = slideInfoB;
+
+
+  
+  if (n > b.length) { slideIndexB = 1 }
+  if (n < 1) { slideIndexB = b.length }
+
+
+  
+  for (i = 0; i < b.length; i++) {
+    //a[i].style.display = "none";
+    b[i].setAttribute('opacity', '0');
   }
 
-  x[slideIndexB - 1].style.display = "block";
+  //a[slideIndexB - 1].style.display = "block";
+  document.getElementById("mo-text").innerHTML = "<strong>" + c[slideIndexB-1] + "</strong>";
+  b[slideIndexB - 1].setAttribute('opacity', '1');
+
+  console.log("This is working! " + b[slideIndexB - 1].id + " " + c[slideIndexB - 1]);
 }

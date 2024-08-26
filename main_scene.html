@@ -22,7 +22,7 @@
     <div class="w3-left w3-display-top" id="mapoverlay-modal-content">
       <div id="mapoverlay-modal-top" class="w3-center w3-display-container w3-container hvhs-grey">
         <div id="mapoverlay-modal-text" class="w3-container w3-display-middle">
-          <h1><strong>TEST MODAL</strong></h1>
+          <h1 id="mo-text"><strong>TEST MODAL</strong></h1>
         </div>
       </div>
       <div id="mapoverlay-slideshow-mid1" class="w3-container w3-orange">
@@ -30,14 +30,25 @@
       </div>
       <div id="mapoverlay-slideshow-mid2" class="w3-container hvhs-aqua w3-center">
         <p><strong>Description Placeholder</strong></p>
+
       </div>
       <footer id="mapoverlay-modal-bot" class="w3-container hvhs-misc w3-center">
-        <div class="w3-container w3-button hvhs-grey w3-margin mapoverlay-modal-btn" onclick="hideOverlay()">
-          <h2><strong>Visit in VR!</strong></h2>
+        <!-----Slideshow B Nav Buttons----->
+        <div class="w3-container w3-margin-top">
+          <div class="slides-arrow w3-container w3-third w3-button hvhs-grey w3-text-black" onclick="changeSlideB(-1)">
+            &#10094;</div>
+          <div class="w3-container w3-third"></div>
+          <div class="slides-arrow w3-container w3-third w3-button hvhs-grey w3-text-black" onclick="changeSlideB(1)">
+            &#10095;</div>
         </div>
-        <div class="w3-container w3-button hvhs-grey mapoverlay-modal-btn w3-margin"
+
+        <div class="w3-container w3-button hvhs-grey w3-margin-top mapoverlay-modal-btn" onclick="hideOverlay()">
+          <h3><strong>Visit in VR!</strong></h3>
+        </div>
+
+        <div class="w3-container w3-button hvhs-grey mapoverlay-modal-btn w3-margin-top"
           onclick="document.getElementById('mapoverlay-modal').style.display='none'">
-          <h2><strong>&times; Close</strong></h2>
+          <h3><strong>&times; Close</strong></h3>
         </div>
       </footer>
     </div>
@@ -196,11 +207,11 @@
             <h1><strong>HVHS</strong></h1>
           </div>
         </div>
-        <!-----Slideshow Nav Buttons----->
+        <!-----Slideshow A Nav Buttons----->
         <div class="w3-container">
-          <div class="slidesA-arrow w3-container w3-half w3-button hvhs-grey w3-text-black" onclick="changeSlideA(-1)">
+          <div class="slides-arrow w3-container w3-half w3-button hvhs-grey w3-text-black" onclick="changeSlideA(-1)">
             &#10094;</div>
-          <div class="slidesA-arrow w3-container w3-half w3-button hvhs-grey w3-text-black" onclick="changeSlideA(1)">
+          <div class="slides-arrow w3-container w3-half w3-button hvhs-grey w3-text-black" onclick="changeSlideA(1)">
             &#10095;</div>
         </div>
       </div>
@@ -219,8 +230,31 @@
   </div>
 
   <a-scene cursor="rayOrigin: mouse">
-    <!--Sky-->
-    <a-sky id="sky1" opacity="1" src="images/nebula.png"></a-sky>
+    <!--Skies-->
+    <div>
+      <a-sky id="sky1" class="scene-sky" opacity="1" src="images/nebula.png"></a-sky>
+      <a-sky id="sky2" class="scene-sky" opacity="0" src="images/nebula.png"></a-sky>
+      <a-sky id="sky3" class="scene-sky" opacity="0" src="images/nebula.png"></a-sky>
+      <a-sky id="sky4" class="scene-sky" opacity="0" src="images/nebula.png"></a-sky>
+      <a-sky id="sky5" class="scene-sky" opacity="0" src="images/nebula.png"></a-sky>
+      <a-sky id="sky6" class="scene-sky" opacity="0" src="images/nebula.png"></a-sky>
+      <a-sky id="sky7" class="scene-sky" opacity="0" src="images/nebula.png"></a-sky>
+      <a-sky id="sky8" class="scene-sky" opacity="0" src="images/nebula.png"></a-sky>
+      <a-sky id="sky9" class="scene-sky" opacity="0" src="images/nebula.png"></a-sky>
+      <a-sky id="sky10" class="scene-sky" opacity="0" src="images/nebula.png"></a-sky>
+      <a-sky id="sky11" class="scene-sky" opacity="0" src="images/nebula.png"></a-sky>
+      <a-sky id="sky12" class="scene-sky" opacity="0" src="images/nebula.png"></a-sky>
+      <a-sky id="sky13" class="scene-sky" opacity="0" src="images/nebula.png"></a-sky>
+      <a-sky id="sky14" class="scene-sky" opacity="0" src="images/nebula.png"></a-sky>
+      <a-sky id="sky15" class="scene-sky" opacity="0" src="images/nebula.png"></a-sky>
+      <a-sky id="sky16" class="scene-sky" opacity="0" src="images/nebula.png"></a-sky>
+      <a-sky id="sky17" class="scene-sky" opacity="0" src="images/nebula.png"></a-sky>
+      <a-sky id="sky18" class="scene-sky" opacity="0" src="images/nebula.png"></a-sky>
+      <a-sky id="sky19" class="scene-sky" opacity="0" src="images/nebula.png"></a-sky>
+      <a-sky id="sky20" class="scene-sky" opacity="0" src="images/nebula.png"></a-sky>
+      <a-sky id="sky21" class="scene-sky" opacity="0" src="images/nebula.png"></a-sky>
+      <a-sky id="sky22" class="scene-sky" opacity="0" src="images/nebula.png"></a-sky>
+  </div>
     <!--Camera-->
     <a-entity id="camera" camera look-controls wasd-controls position="0 1.6 0"></a-entity>
 
