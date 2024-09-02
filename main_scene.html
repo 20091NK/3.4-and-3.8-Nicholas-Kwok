@@ -43,7 +43,8 @@
         </div>
 
         <div class="w3-container w3-button hvhs-grey w3-margin-top mapoverlay-modal-btn" onclick="hideOverlay()">
-          <h3><strong>Visit in VR!</strong></h3>
+          <h3 class="w3-container w3-half"><strong>Visit in VR!</strong></h3>
+          <img src="images/vrheadset.png" id="vr-icon" class="w3-container w3-half">
         </div>
 
         <div class="w3-container w3-button hvhs-grey mapoverlay-modal-btn w3-margin-top"
@@ -55,7 +56,7 @@
   </div>
 
   <!---Top Bar--->
-  <div class="w3-row" id="map-overlay">
+  <div class="w3-row w3-animate-opacity" id="map-overlay">
     <div class="w3-container w3-col l8 m12 overlay-topbar">
       <header class="w3-container overlay-topbar">
         <a href="index.html">
@@ -78,6 +79,8 @@
           id="highlight-admin">
         <img src="images/MapHighlights/HighlightB.png" class="w3-image w3-display-middle map-highlight"
           id="highlight-b">
+          <img src="images/MapHighlights/HighlightC.png" class="w3-image w3-display-middle map-highlight"
+          id="highlight-c">
         <img src="images/MapHighlights/HighlightCanteen.png" class="w3-image w3-display-middle map-highlight"
           id="highlight-canteen">
         <img src="images/MapHighlights/HighlightD.png" class="w3-image w3-display-middle map-highlight"
@@ -133,7 +136,7 @@
           <div id="hvhs-bblock" class="w3-container grid-item w3-half w3-button" onclick="currentSlideB(2)">
             <h1><strong>B</strong></h1>
           </div>
-          <div id="hvhs-cblock" class="w3-container grid-item w3-half w3-button w3-disabled" onclick="currentSlideB(3)">
+          <div id="hvhs-cblock" class="w3-container grid-item w3-half w3-button" onclick="currentSlideB(3)">
             <h1><strong>C</strong></h1>
           </div>
           <div id="hvhs-dblock" class="w3-container grid-item w3-half w3-button" onclick="currentSlideB(4)">
@@ -226,7 +229,7 @@
   </div>
 
   <div class="w3-container" id="scene-overlay" onclick="showOverlay()">
-    <div class="hvhs-grey w3-button w3-quarter">Show Overlay</div>
+    <div class="hvhs-grey w3-left w3-button w3-quarter" id="sceneoverlay-button"><h3><strong>Show Map</strong></h3></div>
   </div>
 
   <a-scene cursor="rayOrigin: mouse">
