@@ -145,9 +145,16 @@ footer {
 
 #scene-overlay {
   position: absolute;
+  left:0;
+  padding:0;
   height: 5%;
   width: 100%;
   z-index: 9999;
+}
+
+#sceneoverlay-button{
+  border: 2px solid black;
+  padding:0;
 }
 
 .overlay-topbar {
@@ -217,6 +224,11 @@ footer {
   width: 80%
 }
 
+#vr-icon {
+  width: 75%;
+  margin: 3px;
+  max-width: 75px;
+}
 
 #mapoverlay-map {
   height: 90vh;
@@ -419,6 +431,4 @@ body:has(#hvhs-wblock:hover) #highlight-w {
 body:has(#hvhs-zblock:hover) #highlight-z {
   opacity: 0.5;
 
-  .slideshow-container {
-    height: 100vh;
-  }
+}
