@@ -179,7 +179,7 @@ footer {
 }
 
 #mapoverlay-modal-top {
-  height: 15%
+  height: 15%;
 }
 
 #mapoverlay-modal-text {
@@ -187,15 +187,19 @@ footer {
 }
 
 #mapoverlay-slideshow-mid1 {
-  height: 30%
+  height: 30%;
+  padding: 0;
+  overflow: hidden;
 }
 
 .scene-thumbnail{
-  width: 100%
+  width: 100%;
+  padding: 0;
 }
 
 #mapoverlay-slideshow-mid2 {
-  height: 25%
+  height: 25%;
+  z-index: 99999999999999999;
 }
 
 #mapoverlay-modal-bot {
@@ -237,6 +241,7 @@ footer {
 #mapoverlay-map {
   height: 90vh;
   padding: 0px 0px 300px;
+  margin-bottom: 300px;
 }
 
 #map {
