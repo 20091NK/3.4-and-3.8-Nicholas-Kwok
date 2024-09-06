@@ -123,7 +123,7 @@ body {
 }
 
 .hvhs-modal-overlay {
-  width: 75%;
+  width: 50%;
   opacity: 0.25
 }
 
@@ -137,10 +137,307 @@ footer {
 
 /*--Map Overlay--*/
 
+#map-overlay {
+  position: absolute;
+  width: 100%;
+  z-index: 10000;
+}
+
+#scene-overlay {
+  position: absolute;
+  left:0;
+  padding:0;
+  height: 5%;
+  width: 100%;
+  z-index: 9999;
+}
+
+#sceneoverlay-button{
+  border: 2px solid black;
+  padding:0;
+}
+
 .overlay-topbar {
   padding: 0
 }
 
-.slideshow-container{
-  height:100vh;
+#ad-alta-mapicon {
+  max-width: 256px;
+}
+
+#mapoverlay-modal {
+  z-index: 10001;
+  width: 33.333333%;
+}
+
+#mapoverlay-modal-content {
+  border: 2px solid black;
+  width: 33.333333%;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+}
+
+#mapoverlay-modal-top {
+  height: 15%;
+}
+
+#mapoverlay-modal-text {
+  width: 100%
+}
+
+#mapoverlay-slideshow-mid1 {
+  height: 30%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.scene-thumbnail{
+  width: 100%;
+  padding: 0;
+}
+
+#mapoverlay-slideshow-mid2 {
+  height: 25%;
+  z-index: 99999999999999999;
+}
+
+#mapoverlay-modal-bot {
+  height: 30%
+}
+
+.mapoverlay-modal-btn {
+  border: 2px solid black;
+  width: 80%
+}
+
+#mapoverlay-modal-text {
+  width: 100%
+}
+
+#mapoverlay-slideshow-mid1 {
+  height: 30%
+}
+
+#mapoverlay-slideshow-mid2 {
+  height: 22.5%
+}
+
+#mapoverlay-modal-bot {
+  height: 32.5%
+}
+
+.mapoverlay-modal-btn {
+  border: 2px solid black;
+  width: 80%
+}
+
+#vr-icon {
+  width: 75%;
+  margin: 3px;
+  max-width: 75px;
+}
+
+#mapoverlay-map {
+  height: 90vh;
+  padding: 0px 0px 300px;
+  margin-bottom: 300px;
+}
+
+#map {
+  height: 85vh;
+}
+
+.map-highlight {
+  height: 85vh;
+  opacity: 0.0;
+  z-index: 25;
+}
+
+.slideshow-container {
+  height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.grid-item {
+  border: 2px solid black;
+  height: 100%;
+  padding: 15px 0px;
+  position: relative;
+}
+
+#slideshowA-placeholder {
+  width: 100%;
+  grid-column: 1 / 2;
+}
+
+.slides-arrow {
+  border: 2px solid black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.badge-padding {
+  padding: 14px 24px 14px 24px;
+}
+
+.w3-badge {
+  height: 18px;
+  width: 18px;
+  padding: 0;
+}
+
+#hvhs-ablock {
+  background-color: #059257;
+}
+
+#hvhs-bblock {
+  background-color: #21ceae;
+}
+
+#hvhs-cblock {
+  background-color: #ffd006;
+}
+
+#hvhs-dblock {
+  background-color: #008a97;
+}
+
+#hvhs-eblock {
+  background-color: #ea839c;
+}
+
+#hvhs-fblock {
+  background-color: #bc5052;
+}
+
+#hvhs-gblock {
+  background-color: #84d3c4;
+}
+
+#hvhs-mblock {
+  background-color: #fa896a;
+}
+
+#hvhs-pblock {
+  background-color: #c1528a;
+}
+
+#hvhs-vblock {
+  background-color: #a87d52;
+}
+
+#hvhs-wblock {
+  background-color: #5bd0d5;
+}
+
+#hvhs-zblock {
+  background-color: #acc14f;
+}
+
+#hvhs-gym {
+  background-color: #71d563;
+}
+
+.hvhs-misc {
+  background-color: #414243;
+}
+
+.hvhs-misc2 {
+  background-color: #f79521;
+}
+
+/*---Highlight Functions---*/
+
+body:has(#hvhs-ablock:hover) #highlight-a {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-admin:hover) #highlight-admin {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-bblock:hover) #highlight-b {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-cblock:hover) #highlight-c {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-canteen:hover) #highlight-canteen {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-dblock:hover) #highlight-d {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-eblock:hover) #highlight-e {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-fblock:hover) #highlight-f {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-gblock:hover) #highlight-g {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-gym:hover) #highlight-gym {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-hall:hover) #highlight-hall {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-lblock:hover) #highlight-l {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-library:hover) #highlight-library {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-mblock:hover) #highlight-m {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-soffice:hover) #highlight-office {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-pblock:hover) #highlight-p {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-pavilion:hover) #highlight-pavilion {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-rescen:hover) #highlight-rescen {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-sblock:hover) #highlight-s {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-vblock:hover) #highlight-v {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-wblock:hover) #highlight-w {
+  opacity: 0.5;
+}
+
+body:has(#hvhs-zblock:hover) #highlight-z {
+  opacity: 0.5;
+
 }
