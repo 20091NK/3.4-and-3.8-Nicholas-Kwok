@@ -190,6 +190,10 @@ footer {
   height: 30%
 }
 
+.scene-thumbnail{
+  width: 100%
+}
+
 #mapoverlay-slideshow-mid2 {
   height: 25%
 }
